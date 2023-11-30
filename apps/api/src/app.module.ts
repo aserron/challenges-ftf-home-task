@@ -5,8 +5,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { validationSchemaForEnv } from './config/environment-variables';
 import { PersistenceModule } from './persistence/persistence.module';
-import { GitHubApiModule } from './git-hub-api/git-hub-api.module';
+
 import { AuthModule } from './auth/auth.module';
+import {GithubModule} from "./github/github.module";
 
 @Module({
   imports: [
@@ -15,7 +16,7 @@ import { AuthModule } from './auth/auth.module';
       validationSchema: validationSchemaForEnv,
     }),
     PersistenceModule,
-    GitHubApiModule,
+    GithubModule,
     AuthModule,
   ],
   controllers: [AppController],
