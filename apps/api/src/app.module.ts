@@ -8,6 +8,7 @@ import { PersistenceModule } from './persistence/persistence.module';
 
 import { AuthModule } from './auth/auth.module';
 import {GithubModule} from "./github/github.module";
+import {GithubController} from "./github/github.controller";
 
 @Module({
   imports: [
@@ -15,11 +16,12 @@ import {GithubModule} from "./github/github.module";
       isGlobal: true,
       validationSchema: validationSchemaForEnv,
     }),
+      
     PersistenceModule,
     GithubModule,
     AuthModule,
   ],
-  controllers: [AppController],
+  controllers: [AppController, GithubController],
   providers: [AppService],
 })
 export class AppModule {}
