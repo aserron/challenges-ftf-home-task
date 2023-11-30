@@ -1,27 +1,43 @@
 # TFT Code Challenge
 
+## Objective
+Create a n-tier solution allowing users to access the challenge repository history.
+1. NestJS Backend Web Service: GitHub API consumer, history endopoint provider.least should have a Nest.js backend, and a React/Tailwind frontend.
+2. React FrontEnd Web App: Display repo history information.
+3. Stand Alone Execution: Auto Install, unattended setup. Solution must be presented free of any user set-up, environmental vars, global executables.
+4. Documented Solution: Provide clear documentation on 
+   - installation. 
+   - execution. 
+   - API usage. 
+   - UI usage.
+
 
 ### Backend Task Summary
 #### Required:
 * [x]  Create a NestJS REST Backend
 * [x]  Create a GitHub API Consumer Module
-* [x]  Implement the repository history endpoint
+* [x]  Create a API controller
+* [x]  Implement the repository history info endpoint
 * [ ]  Implement Rate Limiting
 * [x]  Deployment should be full automatic.
 
 #### Optional:
-* [ ]  Secure with JWT / API Key
+* [x]  Database / Persistence Layer.
 * [x]  Implement Per Layer Error Handling
-* [ ]  Observe and implement rate limiting and other API usage policies.
-* [ ]  Add Database / Persistence Layer. 
+* [ ]  Fault Tolerant, crash recovery.
+* [ ]  Advanced Logging.
+* [ ]  Enforce GitHub API Usage Policies
+* [ ]  Secure with JWT / API Key
 
 ### Frontend Task Summary
 #### Required:
+* [x]  Deployment should be full automatic.
 * [ ]  Create a React Application
 * [ ]  Implement UI with a tailwind, and other ui framework.
 * [ ]  Implement consumer for backend service.
 
 #### Optional:
+* [ ]  Enhance with UI Library / Toolkit compatible with Tailwind
 * [ ]  Automatically Updating
 * [ ]  Security: User log in, abuse protection.
 * [ ]  Security: Headers, 
