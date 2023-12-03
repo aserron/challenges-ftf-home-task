@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "main": "src/index.ts",
+  "dependencies": {
+    "@tsconfig/node18": "^18.2.2"
+  },
   "files": [
     "base.json",
     "nextjs.json",

@@ -1,0 +1,16 @@
+{
+  "name": "@ftgh/data",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "peerDependencies": {
+   
+  },
+  "dependencies": {     
+    "@tsconfig/node18": "^18.2.2",
+       "@tsconfig/recommended": "^1.0.3"
+  },
+  "files": [
+   
+  ]
+}
