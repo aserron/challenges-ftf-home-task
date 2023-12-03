@@ -1,3 +1,6 @@
+## Resources
+https://towardsdatascience.com/visualizing-developer-activity-via-the-github-api-48c38c40914f
+
 # API AUTH
     curl --request GET \
     --url "https://api.github.com/octocat" \

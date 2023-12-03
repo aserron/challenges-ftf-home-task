@@ -53,7 +53,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - run: yarn global add turbo
+      - run: npx global add turbo
       - run: npx nps prepare.ci.api
       - run: npx nps build.ci.api
       - run: npx nps test.ci.api
